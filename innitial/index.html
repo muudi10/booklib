@@ -11,20 +11,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".wish-icon i").click(function(){
-                $(this).toggleClass("fa-heart fa-heart-o");
-            });
-        });	
-        </script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
+
         </head>
 </head>
 <body>
     <div class="container">
+        <!-- search-box -->
+
+
+
+
+
+        <!-- search-box end  -->
+
+
      <!-- navigation and use profile icon  -->
      <div class="navigation">
 
@@ -52,12 +58,7 @@
                 <a href="#" class="nav-item nav-link">Blog</a>
                 <a href="#" class="nav-item nav-link">Contact</a>
             </div>
-            <form class="navbar-form form-inline">
-                <div class="input-group search-box">								
-                    <input type="text" id="search" class="form-control" placeholder="Search by Name">
-                    <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
-                </div>
-            </form>
+            
             <div class="navbar-nav ml-auto">
                 <a href="#" class="nav-item nav-link notifications"><i class="fa fa-bell-o"></i><span class="badge">1</span></a>
                 <a href="#" class="nav-item nav-link messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></a>
@@ -74,13 +75,528 @@
             </div>
         </div>
     </nav>
+    <div class="row ">
+        <div class="col-12">
+            <div class="card mt-3 pt-1 pb-1">
+   
+                <div class="d-flex justify-content-center px-5">
+                    <div class="search"> <input type="text" class="search-input" placeholder="Search..." name=""> <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a> </div>
+                </div>
 </div>
+<hr>
+<div class="hero-section ">
+<!-- Special book -->
+<div class="row">
+    <div class="col-12">
+        <h3 class="d-flex justify-content-lg-start ">Special Book </h3>
+    </div>
+</div>
+<hr>
+<div class="row">
 
-<div class="hero-section">
+
+    <div class="col-8 " >
+
+    <div id="slideshow">
+        <div class="slick">
+            <div>   <img class="special" src="./images/special-one.png" alt=""></div>
+            <div><img class="special" src="./images/special-two.png" alt=""></div>
+            <div><img class="special" src="./images/test3.JPG" alt=""></div>
+        </div>
+     
+    </div>
+
+    </div>
+    <div class="col-4 ">
+  <div  class="book-of-the-week" > <img src="./images/book-week.png" alt=""></div>
+
+    </div>
+</div>
+<!-- special section end -->
+<hr>
+
+<!-- award winning books section -->
+<div class="row">
+    <div class="col-12 d-flex justify-content-between align-items-center">
+        <h2 > Award winning books</h2>
+        <h2>More award winning books</h2>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
    
 </div>
 
+<!-- award winning books section end -->
+
+<hr>
+
+<!-- Featured books section  -->
+<div class="row">
+    <div class="col-12 award-winning-books d-flex justify-content-between align-items-center">
+        <h2 > Featured Books</h2>
+        <h2>More featured books</h2>
     </div>
+</div>
+
+<hr>
+<div class="row">
+    
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    
+   
+    
   
+   
+
+</div>
+<!-- Featured books section end  -->
+<hr>
+ <!-- Rare finds section  -->
+<div class="row">
+<div class="col-6 rare-find">
+<img src="./images/test3.JPG" alt="">
+
+</div>
+<div class="rare-text col-6">
+    <h2 >Rare Books: Add class to your collection with vintage books</h2>
+    <span>Three things that get better with age: cheese, wine, and books. We are particularly proud of our marvellous selection of vintage, old, and rare books. A book is much more than its cover and our rare books range is here to prove it.</span>
+</div>
+</div>
+
+ <!-- Rare finds section end-->
+<hr>
+<!-- Best selling Non-Fiction Books -->
+<div class="row">
+<div class="col-12 nonfic d-flex justify-content-between align-items-center">
+    <h2 > Best selling Non-Fiction Books</h2>
+    <h2>View Non-Fiction</h2>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-2">
+    <div class="card" style="width: 165px ">
+        <img class="card-img-top" src="./images/main-image.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example  content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
+<div class="col-2">
+    <div class="card" style="width: 165px ">
+        <img class="card-img-top" src="./images/main-image.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example  content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
+<div class="col-2">
+    <div class="card" style="width: 165px ">
+        <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+        <div class="card-body justify-content-center ">
+          <h5 class="card-title ">Book Title</h5>
+          <h5 class="card-title author ">Book Author</h5>
+          <p class="card-price">£25</p>
+          <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+        </div>
+      </div>
+</div>
+<div class="col-2">
+    <div class="card" style="width: 165px ">
+        <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+        <div class="card-body justify-content-center ">
+          <h5 class="card-title ">Book Title</h5>
+          <h5 class="card-title author ">Book Author</h5>
+          <p class="card-price">£25</p>
+          <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+        </div>
+      </div>
+</div>
+<div class="col-2">
+    <div class="card" style="width: 165px ">
+        <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+        <div class="card-body justify-content-center ">
+          <h5 class="card-title ">Book Title</h5>
+          <h5 class="card-title author ">Book Author</h5>
+          <p class="card-price">£25</p>
+          <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+        </div>
+      </div>
+</div>
+   <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+
+</div>
+<!-- Best selling Non-Fiction Books -->
+<hr>
+<!-- Best selling Children's Books -->
+<div class="row">
+<div class="col-12 nonfic d-flex justify-content-between align-items-center">
+    <h2 > Best selling Children's Books</h2>
+    <h2>View more Children's Books </h2>
+</div>
+</div>
+<hr>
+<div class="row">
+
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+
+
+
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="col-2">
+        <div class="card" style="width: 165px ">
+            <img class="card-img-top mb-0" src="./images/main-image.png" alt="Card image cap">
+            <div class="card-body justify-content-center ">
+              <h5 class="card-title ">Book Title</h5>
+              <h5 class="card-title author ">Book Author</h5>
+              <p class="card-price">£25</p>
+              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+
+</div>
+
+<!-- Best selling Children's Books end -->
+    <hr>
+
+    <!-- footer -->
+<div class="row">
+<div class="col-12 footer-text">
+    <h3>Welcome to the Wonderful World of Books
+    </h3>
+    <p>If you’re looking for great value second hand books, then World of Books is the place for you.
+
+    </p>
+    <p>As you may already know, we aren’t like other online book stores. For starters, we don’t believe that books should only be read once, or have a single owner. Literature should endure and be continually recycled, which is why we help millions of used books find new homes every year.
+
+    </p>
+<p>World of Books also buys directly from charities, taking the titles they don’t want or haven’t got space for. So as well as preventing the destruction of perfectly good books, our customers are helping to support good causes too.
+
+</p>
+<h3>Cheap Books, Fantastic Choice
+</h3>
+<p>Browse through hundreds of thousands of titles today. Whether you’re a fan of crime fiction or celebrity autobiographies, classic literature or modern best sellers, we have it all. Better still, our books are available at the cheapest prices and come with free delivery in the UK too.
+
+</p>
+<p>So booklovers, academics and casual readers, rejoice! There’s something for everyone at World of Books, and it won’t cost the earth.
+
+</p>
+</div>
+
+</div>
+    <!-- footer end -->
+
+    <!-- reviews -->
+
+<hr>
+<div class="row">
+    
+    <div class="col-2">
+
+<img src="./images/special-one.png" style="height:145px; width:190px" alt="">
+
+
+
+    </div>
+    
+    <div class="col-10  d-flex ">
+        <div class="slideshow">
+            <div class="multiple-items d-flex">
+
+          
+        <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment -1</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card text-center" >
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment -2</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card text-center" >
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment -3</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card text-center" >
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment -4</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment-5</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment -6</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+         
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(()=>{
+        $('.slideshow,  .slick').slick({
+            autoplay:true,
+            autoplaySpeed: 2000,
+            dots:true
+
+        })
+    })
+  
+</script>
+<script>
+    $(document).ready(()=>{
+        $('.testimonial,  .multiple-items').slick({
+            dots:true,
+            autoplay:true,
+            autoplaySpeed: 4000,
+        
+  slidesToShow: 3,
+  slidesToScroll: 3
+
+        })
+    })
+</script>
+
 </body>
 </html>
