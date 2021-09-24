@@ -12,7 +12,6 @@ const Tag = require('./models/Tag')
 const sequelize = require('./config/database')
 
 
-sequelize.sync()
 
 const port = process.env.PORT || 6000;
 
@@ -26,17 +25,47 @@ app.get('/home', (req, res)=>{
     res.render('index',{ layout: 'landing'})
 })
 
+app.get("/books", (req, res) =>{
+
+
+  Book.findAll()
+    .then((book) =>
+      res.render("index", {
+     
+        book,   
+        
+      
+      })
+
+    )
+    .catch((err) =>
+      res.render("error", {
+        error: err,
+      })
+    )
+    
+    });
+
+
+
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: false }));
 
 
 app.engine(
-    "handlebars",
-  
-    exphbs({
-      defaultLayout: "main",
-    })
-  );
+  "handlebars",
+
+  exphbs({
+    defaultLayout: "main",
+
+    runtimeOptions: {
+      allowProtoPropertiesByDefault: true,
+
+      allowProtoMethodsByDefault: true,
+    },
+  })
+);
+
 
 app.set('view engine', 'handlebars')
 
