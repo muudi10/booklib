@@ -1,0 +1,142 @@
+<div class="container insideborder">
+    {{>header}}
+  <div class="container insideborder">
+
+ <div class="row mt-5">
+                      
+                      <div class="col-8">
+                        <form action="/add" method="POST">
+                          <div class="row">
+                            <div class="col">
+                              <!-- Name input -->
+                              <div class="form-outline">
+                                <label class="form-label" for="form8Example1">Book Title</label>
+                                <input type="text" id="title" class="form-control mt-2" name="title" />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <!-- Email input -->
+                              <div class="form-outline">
+                                <label class="form-label" for="form8Example2">Author </label>
+                                <input type="text" name="author" id="form8Example2" class="form-control mt-2" />
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <hr />
+                          
+                          <div class="row mt-2">
+                            <div class="col">
+                              <!-- Name input -->
+                              <div class="form-outline">
+                                <label class="form-label mb-2" for="form8Example3">Genre</label>
+                                <select class="js-example-basic-single form-label mb-1 form-control" name="genre">
+                        <option value="name" class="form-contol">Select Genre</option>
+                        <option value="adventure" class="form-contol">Adventure</option>
+                        <option value="arts_books" class="form-contol">Arts Books</option>
+                        <option value="classic_fiction" class="form-contol">Classic Fiction</option>
+                        <option value="crime_and_mystery" class="form-contol">Crime and Mystery</option>
+                        <option value="fantasy" class="form-contol">Fantasy</option>
+                        <option value="graphic_novels" class="form-contol">Graphic novels</option>
+                        <option value="historical" class="form-contol">Historical</option>
+                        <option value="horror" class="form-contol">Horror</option>
+                        <option value="romance" class="form-contol">Romance</option>
+                        <option value="science_ fiction" class="form-contol">Science Fiction</option>
+                        <option value="thriller" class="form-contol">Thriller</option>
+                        <option value="western" class="form-contol">Western</option>
+                        
+                        
+                      </select>
+                    </div>
+                    
+                    
+
+                    
+                    
+                  </div>
+                  <div class="col">
+                    <!-- Name input -->
+                      <div class="form-outline">
+                        <label class="form-label" name ="publisher" for="form8Example4">Publisher</label>
+                        <input type="publisher" id="form8Example4" name="publisher" class="form-control mt-2" />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <!-- Email input -->
+                      <div class="form-outline">
+                        <label class="form-label" for="form8Example5">Publication Year</label>
+                        <input type="date" id="form8Example5" name="publicationYear" class="form-control mt-2" />
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row mt-3">
+                    <div class="col">
+                      <!-- Name input -->
+                      <div class="form-outline">
+                        <label class="form-label" for="form8Example3">ISBN</label>
+                        <input type="number" name ="isbn"id="form8Example3" class="form-control mt-2" />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <!-- Name input -->
+                     
+                      <div class="form-outline">
+                       
+
+                        <label for="form-label" class="form8Example3">Young Audience</label>
+                      <select class="js-example-basic-single form-label mb-1 form-control" name="audience">  
+                        <option value="true" class="form-control">Yes</option>
+                        <option value="false" class="form-control">No</option>
+                       
+                       </select>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                  <hr>
+                  <div class="col">
+                    <!-- Name input -->
+                  </div>
+                  <div class="form-outline">
+                    <label class="form-label" for="form8Example2" name"summary"">Summary </label>
+                    <textarea rows="3" cols="50" name="summary" id="form8Example4" class="form-control mt-2" >
+                    </textarea>                  
+                  </div>
+                  <div class="col mt-4">
+                    <!-- Email input -->
+                  </div>
+                  <div class="form-outline">
+                    <label class="form-label" for="form8Example2">Description </label>
+                    <textarea rows="5" cols="60" name="description" id="form8Example4" class="form-control mt-2" >
+                    </textarea>                  
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                        <label for="exampleFormControlFile1">Image upload</label>
+                  <input type="file" name="image" class="form-control-file form-control " id="form8Example4">
+                    
+                </div>
+                <div class="col-6 form-outline">
+                   <button class="btn btn-primary form-control-file form-control mt-4" id="form8Example4" type="submit">Submit form</button>
+
+                </div>
+                  </div>
+                </div>
+                
+              </form>
+              <div class="col-4"> <div class="sidebar mt-4">
+                <img src="images/addbook.jpg" style="height:560px; width: 100%; border-radius: 5px;" alt="">
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          {{>footer}}
+
+
+
+  </div>
+</div>

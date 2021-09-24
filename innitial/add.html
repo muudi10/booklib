@@ -15,120 +15,148 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-<div class="container">
+  </head>
+  
+  <body>
+<div class="container-fluid">
+  <div class="outsideborder">
 
-    <div class="container">
-
-        <section class="sitenavigation">
+    
+    <div class="container insideborder">
+      
+      <section class="sitenavigation">
         
         
-            <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
-                <a href="#" class="navbar-brand"><i class="fa fa-cube"></i>Brand<b>Name</b></a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Collection of nav links, forms, and other content for toggling -->
-                <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-                    <div class="navbar-nav">
-                        <a href="#" class="nav-item nav-link active">Home</a>
-                        <a href="#" class="nav-item nav-link">About</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Web Design</a>
-                                <a href="#" class="dropdown-item">Web Development</a>
-                                <a href="#" class="dropdown-item">Graphic Design</a>
-                                <a href="#" class="dropdown-item">Digital Marketing</a>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
+          <a href="#" class="navbar-brand"><i class="fa fa-cube"></i>Brand<b>Name</b></a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collection of nav links, forms, and other content for toggling -->
+          <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+            <div class="navbar-nav">
+              <a href="#" class="nav-item nav-link active">Home</a>
+              <a href="#" class="nav-item nav-link">About</a>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Web Design</a>
+                  <a href="#" class="dropdown-item">Web Development</a>
+                  <a href="#" class="dropdown-item">Graphic Design</a>
+                  <a href="#" class="dropdown-item">Digital Marketing</a>
+                </div>
+              </div>
+              <a href="#" class="nav-item nav-link">Blog</a>
+              <a href="#" class="nav-item nav-link">Contact</a>
+            </div>
+            
+            <div class="navbar-nav ml-auto">
+              <a href="#" class="nav-item nav-link notifications"><i class="fa fa-bell-o"></i><span class="badge">1</span></a>
+              <a href="#" class="nav-item nav-link messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></a>
+              <div class="nav-item dropdown">
+                <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/examples/images/avatar/2.jpg" class="avatar" alt="Avatar"> Paula Wilson <b class="caret"></b></a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></a>
+                  <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></a>
+                  <a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a>
+                  <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></a>
+                              </div>
                             </div>
+                          </div>
                         </div>
-                        <a href="#" class="nav-item nav-link">Blog</a>
-                        <a href="#" class="nav-item nav-link">Contact</a>
+                      </nav>
+                    </section>
+                    
+                    
+                    <section class="searchbar">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="card mt-1 mb-5">
+                            
+                            <div class="d-flex justify-content-center px-5">
+                              <div class="search"> <input type="text" class="search-input" placeholder="Search..." name=""> <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a> </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                    </section>
+                    
+                    <!-- add product form start -->
+                    <div class="row mt-5">
+                      
+                      <div class="col-8">
+                        <form action="">
+                          <div class="row">
+                            <div class="col">
+                              <!-- Name input -->
+                              <div class="form-outline">
+                                <label class="form-label" for="form8Example1">Book Title</label>
+                                <input type="text" id="title" class="form-control mt-2" name="title" />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <!-- Email input -->
+                              <div class="form-outline">
+                                <label class="form-label" for="form8Example2">Author </label>
+                                <input type="text" name="author" id="form8Example2" class="form-control mt-2" />
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <hr />
+                          
+                          <div class="row mt-2">
+                            <div class="col">
+                              <!-- Name input -->
+                              <div class="form-outline">
+                                <label class="form-label mb-2" for="form8Example3">Genre</label>
+                                <select class="js-example-basic-single form-label mb-1 form-control" name="genre">
+                        <option value="name" class="form-contol">Select Genre</option>
+                        <option value="adventure" class="form-contol">Adventure</option>
+                        <option value="arts_books" class="form-contol">Arts Books</option>
+                        <option value="classic_fiction" class="form-contol">Classic Fiction</option>
+                        <option value="crime_and_mystery" class="form-contol">Crime and Mystery</option>
+                        <option value="fantasy" class="form-contol">Fantasy</option>
+                        <option value="graphic_novels" class="form-contol">Graphic novels</option>
+                        <option value="historical" class="form-contol">Historical</option>
+                        <option value="horror" class="form-contol">Horror</option>
+                        <option value="romance" class="form-contol">Romance</option>
+                        <option value="science_ fiction" class="form-contol">Science Fiction</option>
+                        <option value="thriller" class="form-contol">Thriller</option>
+                        <option value="western" class="form-contol">Western</option>
+                        
+                        
+                      </select>
                     </div>
                     
-                    <div class="navbar-nav ml-auto">
-                        <a href="#" class="nav-item nav-link notifications"><i class="fa fa-bell-o"></i><span class="badge">1</span></a>
-                        <a href="#" class="nav-item nav-link messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></a>
-                        <div class="nav-item dropdown">
-                            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/examples/images/avatar/2.jpg" class="avatar" alt="Avatar"> Paula Wilson <b class="caret"></b></a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></a>
-                                <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></a>
-                                <a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        
-        
-        <section class="searchbar">
-            <div class="row">
-                <div class="col-12">
-                       <div class="card mt-1 ">
-           
-                <div class="d-flex justify-content-center px-5">
-                    <div class="search"> <input type="text" class="search-input" placeholder="Search..." name=""> <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a> </div>
-                </div>
-        </div>
-                </div>
-            </div>
-        
-         
-        </section>
+                    
 
-        <!-- add product form start -->
-     <div class="row mt-5">
-         
-         <div class="col-8">
-             <form action="">
-                <div class="row">
-                    <div class="col">
-                      <!-- Name input -->
-                      <div class="form-outline">
-                          <label class="form-label" for="form8Example1">Book Title</label>
-                        <input type="text" id="title" class="form-control mt-2" name="title" />
-                      </div>
-                    </div>
-                    <div class="col">
-                      <!-- Email input -->
-                      <div class="form-outline">
-                          <label class="form-label" for="form8Example2">Author </label>
-                        <input type="text" name="author" id="form8Example2" class="form-control mt-2" />
-                      </div>
-                    </div>
+                    
+                    
                   </div>
-                  
-                  <hr />
-                  
-                  <div class="row mt-2">
-                    <div class="col">
-                      <!-- Name input -->
+                  <div class="col">
+                    <!-- Name input -->
                       <div class="form-outline">
-                          <label class="form-label" for="form8Example3">Genre</label>
-                        <input type="text" name ="genre"id="form8Example3" class="form-control mt-2" />
-                      </div>
-                    </div>
-                    <div class="col">
-                      <!-- Name input -->
-                      <div class="form-outline">
-                          <label class="form-label" name ="publisher" for="form8Example4">Publisher</label>
+                        <label class="form-label" name ="publisher" for="form8Example4">Publisher</label>
                         <input type="publisher" id="form8Example4" class="form-control mt-2" />
                       </div>
                     </div>
                     <div class="col">
                       <!-- Email input -->
                       <div class="form-outline">
-                          <label class="form-label" for="form8Example5">Publication Year</label>
+                        <label class="form-label" for="form8Example5">Publication Year</label>
                         <input type="date" id="form8Example5" name="publicationYear" class="form-control mt-2" />
                       </div>
                     </div>
@@ -138,59 +166,213 @@
                     <div class="col">
                       <!-- Name input -->
                       <div class="form-outline">
-                          <label class="form-label" for="form8Example3">ISBN</label>
+                        <label class="form-label" for="form8Example3">ISBN</label>
                         <input type="number" name ="isbn"id="form8Example3" class="form-control mt-2" />
                       </div>
                     </div>
                     <div class="col">
                       <!-- Name input -->
-                      <div class="form-outline ">
-                          <p>Suitable for young audience</p>
-                          <div class="radionbutton d-flex">
-                             <label class="form-label" name ="agerating" for="form8Example4">yes </label>
-                            <input type="radio" name="yes"   value="yes" id="form8Example4" class="form-control" />
-                        <label class="form-label" name ="agerating" for="form8Example4">No </label>  
-                        <input type="radio" name="no" value="no" id="form8Example4" class="form-control mt-2" />
-                          </div>
+                      <!-- <div class="form-outline ">
+                        <p>Suitable for young audience</p>
+                        <div class="radionbutton d-flex">
+                          <label class="form-label" name ="agerating" for="form8Example4">yes </label>
+                          <input type="radio" name="yes"   value="yes" id="form8Example4" class="form-control" />
+                          <label class="form-label" name ="agerating" for="form8Example4">No </label>  
+                          <input type="radio" name="no" value="no" id="form8Example4" class="form-control mt-2" />
+                        </div>
                         
+                      </div> -->
+                      <div class="form-outline">
+                        <label class="form-label mb-2" for="form8Example3">Young Audience</label>
+                        <select class="js-example-basic-single form-label  form-control" name="young_audience">
+                          <option value="yes" class="form-contol">Yes</option>
+                          <option value="no" class="form-contol">No</option>
+                          
+                          
+                        </select>
+
+                        <!-- <label for="form-label" class="form8Example3">Young Audience</label>
+                    <select class="form-control" id="form8Example4 name"young_audience">
+                        <option value="yes" class="form-control">Yes</option>
+                        <option value="no" class="form-control">No</option>
+                       
+                       </select> -->
                       </div>
                       
                     </div>
-                   
+                    
                   </div>
                   <hr>
                   <div class="col">
                     <!-- Name input -->
-                </div>
-                <div class="form-outline">
+                  </div>
+                  <div class="form-outline">
                     <label class="form-label" for="form8Example2">Summary </label>
                     <textarea rows="3" cols="50" name="summary" id="form8Example4" class="form-control mt-2" >
-                  </textarea>                  
-                      </div>
+                    </textarea>                  
+                  </div>
                   <div class="col mt-4">
                     <!-- Email input -->
-                </div>
-                <div class="form-outline">
+                  </div>
+                  <div class="form-outline">
                     <label class="form-label" for="form8Example2">Description </label>
                     <textarea rows="5" cols="60" name="description" id="form8Example4" class="form-control mt-2" >
-                  </textarea>                  
-                      </div>
+                    </textarea>                  
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                        <label for="exampleFormControlFile1">Image upload</label>
+                  <input type="file" name="image" class="form-control-file form-control " id="form8Example4">
+                    
                 </div>
+                <div class="col-6 form-outline">
+                   <button class="btn btn-primary form-control-file form-control mt-4" id="form8Example4" type="submit">Submit form</button>
+
+                </div>
+                  </div>
                   
-             </form>
-             <div class="col-4"> <div class="sidebar">
-                 <img src="./images/poduct_image.jpg" style="height:;" alt="">
+                
+                  
 
-             </div>
+                  
+
+                </div>
+                
+              </form>
+              <div class="col-4"> <div class="sidebar mt-4">
+                <img src="../public/images/addbook.jpg" style="height:560px; width: 100%; border-radius: 5px;" alt="">
+                
+              </div>
             </div>
-         </div>
-     </div>
+          </div>
+          <hr>
+          
+          
+          <!-- footer  -->
+          <div class="row mt-5">
+            <div class="col-12 footer-text">
+              <h3>Welcome to the Wonderful World of Books
+              </h3>
+              <p>If you’re looking for great value second hand books, then World of Books is the place for you.
+                
+              </p>
+              <p>As you may already know, we aren’t like other online book stores. For starters, we don’t believe that books should only be read once, or have a single owner. Literature should endure and be continually recycled, which is why we help millions of used books find new homes every year.
+                
+              </p>
+              <p>World of Books also buys directly from charities, taking the titles they don’t want or haven’t got space for. So as well as preventing the destruction of perfectly good books, our customers are helping to support good causes too.
+                
+              </p>
+              <h3>Cheap Books, Fantastic Choice
+              </h3>
+              <p>Browse through hundreds of thousands of titles today. Whether you’re a fan of crime fiction or celebrity autobiographies, classic literature or modern best sellers, we have it all. Better still, our books are available at the cheapest prices and come with free delivery in the UK too.
+                
+              </p>
+              <p>So booklovers, academics and casual readers, rejoice! There’s something for everyone at World of Books, and it won’t cost the earth.
+                
+              </p>
+            </div>
+            
+          </div>
+          <hr>
+          <div class="row">
+            
+            <div class="col-2">
+              
+              <img src="./images/trustpilot.png" style="height:145px; width:190px" alt="">
+              
+              
+              
+            </div>
+            
+            <div class="col-10  d-flex ">
+              <div class="slideshow">
+                <div class="multiple-items d-flex">
+                  
+                  
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment -1</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" >
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment -2</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" >
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment -3</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" >
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment -4</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment-5</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment -6</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
+        </div>
         
+        
+      </div>
+      
+    </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(()=>{
+    $('.slideshow,  .slick').slick({
+      autoplay:true,
+      autoplaySpeed: 2000,
+      dots:true
+      
+    })
+  })
+  
+</script>
+<script>
+  $(document).ready(()=>{
+    $('.testimonial,  .multiple-items').slick({
+      dots:true,
+            autoplay:true,
+            autoplaySpeed: 4000,
+        
+  slidesToShow: 3,
+  slidesToScroll: 3
 
-</div>
-
-
-<body>
+        })
+    })
+</script>
     
 </body>
 </html>
