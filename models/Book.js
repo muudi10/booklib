@@ -2,7 +2,7 @@ const Sequelize = require('sequelize')
 const sequelize = require('../config/database')
 
 const Book = sequelize.define('book',{
-    book_id:{
+    id:{
        type: Sequelize.INTEGER,
         autoIncrement: true,
         allowNull:false,
@@ -48,11 +48,12 @@ const Book = sequelize.define('book',{
     page_count:{
         type:Sequelize.STRING
     },
+    image:{
+        type: Sequelize.STRING
+    },
 
     createdAt: Sequelize.DATE,
     updatedAt: Sequelize.DATE
-
-   
 
     
 })

@@ -9,28 +9,14 @@ const Tag = sequelize.define('tag',{
         allowNull:false,
         primaryKey:true
     },
-    good_read:{
+booktag:{
         type: Sequelize.BOOLEAN,       
     },
-    featured:{
-        type: Sequelize.BOOLEAN,
-    },
-    new_book:{
-         type:Sequelize.BOOLEAN,
-      
-    },
-
-    book_week:{
-         type:Sequelize.BOOLEAN,
-         allowNull:false,
-    },
-    book_month:{
-        type: Sequelize.BOOLEAN,
-    },
+   
     createdAt: Sequelize.DATE,
     updatedAt: Sequelize.DATE
     
 })
 Book.hasOne(Tag)
-Tag.belongsTo(Book,{as:'promoted'})
+Tag.belongsTo(Book)
 module.exports = Tag

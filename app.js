@@ -4,7 +4,15 @@ require('dotenv').config()
 const path = require('path')
 const app = express()
 const exphbs = require("express-handlebars");
-const db = require('./config/database')
+const db = require("./config/database");
+const Book = require('./models/Book')
+const User = require('./models/User')
+const Genre = require('./models/Genre')
+const Tag = require('./models/Tag')
+const sequelize = require('./config/database')
+
+
+sequelize.sync()
 
 const port = process.env.PORT || 6000;
 
@@ -37,3 +45,38 @@ db.authenticate().then(()=>{
 })  .catch((err) => {
     console.log(err);
   });
+  app.get('/addbook',(req,res)=> res.render('addbook'))
+  app.post('/add', async(req, res)=>{
+    try {
+      const userId = 1;
+        const {title,author,genre,publicationYear, isbn, summary,description,image ,publisher,book_audience }= req.body
+        
+         await Book.create({
+             book_title: title,
+             book_author:author,
+             book_genre:genre,
+             book_isbn:isbn,
+             book_publication_year: publicationYear,
+             book_publisher:publisher,
+             book_summary: summary,
+             book_description: description,
+             book_audience:book_audience,
+             userId: userId
+  
+         });
+         await res.render('index')
+         console.log(req.body)
+        
+    } catch (error) {
+        console.log(error)
+        
+    }
+  })
+  
+  app.get('/register',(req, res)=>{
+    res.render('register')
+  })
+
+  app.get('/login',(req,res)=>{
+    res.render('login')
+  })
