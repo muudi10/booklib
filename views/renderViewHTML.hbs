@@ -1,0 +1,86 @@
+
+
+
+<div class="container insideborder">
+    {{>header}}
+  <div class="container insideborder">
+      <div class="container">
+          {{{paginateHelper pagination}}}
+
+
+         <div class="container">
+<section class="panel">
+                  <header class="panel-heading">
+                      All projects List
+                      <span class="pull-right">
+                          <a href="/booklist" class=" btn btn-warning btn-xs " id="loading-btn" > <i class="fa fa-refresh"></i>Refresh</a>
+                          <a href="#" class=" btn btn-success btn-xs"> Add New Book</a>
+                      </span>
+                  </header>
+                  <div class="panel-body">
+                      <div class="row">
+
+                          <div class="col-md-12">
+                              <div class="input-group"><input type="text" placeholder="Search Here" class="input-sm form-control"> <span class="input-group-btn">
+                              <button type="button" class="btn btn-sm btn-success"> Go!</button> </span></div>
+                          </div>
+                      </div>
+                  </div>
+                  <table class="table table-hover p-table">
+                      <thead>
+                      <tr>
+                          <th>Book Title</th>
+                          <th>Book Author</th>
+                          <th>Book Genre</th>
+                          <th>Book Status</th>
+                          <th>Custom</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                   
+
+                   
+                          {{#each allBooks }}       
+                      <tr>
+                          <td class="p-name">
+                              <a href="/bookview/{{id}}">{{book_title}}</a>
+                              <br>
+                              <small>Created 2.09.2014</small>
+                          </td>
+                          <td class="p-team">
+                              <a href="#">{{book_author}}</a>
+                            
+                          </td>
+                          <td class="p-progress">
+                             
+                              <small>{{book_genre}}</small>
+                          </td>
+                          <td>
+                              <span class="label label-primary">Available</span>
+                          </td>
+                          <td class="d-flex ">
+                              <a href="/bookview/{{id}}" class="btn btn-primary btn-xs "><i class="fa fa-folder"></i> View </a>
+                              <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit </a>
+                              <a href="/delete/{{id}}" class="btn btn-danger btn-xs" method ="GET"><i class="fa fa-trash-o"></i> Delete </a>
+                          </td>
+                      </tr>
+               
+                         {{/each}}
+                      </tbody>
+                  </table>
+              </section>
+</div> 
+
+</div>
+
+
+
+     </div>
+</div>
+   
+
+
+
+{{paginate pagination rightText="Next"}}
+
+

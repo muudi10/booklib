@@ -51,6 +51,9 @@ const Book = sequelize.define('book',{
     image:{
         type: Sequelize.STRING
     },
+    special_tag:{
+        type:Sequelize.STRING
+    },
 
     createdAt: Sequelize.DATE,
     updatedAt: Sequelize.DATE
